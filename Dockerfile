@@ -5,4 +5,4 @@ RUN corepack enable
 COPY . /app
 WORKDIR /app
 RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
-CMD [ "pnpm", "start" ]
+CMD [ "node", "." ]

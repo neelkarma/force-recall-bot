@@ -17,4 +17,4 @@
 2. Clone this repo.
 3. Create a `.env` file with a `BOT_TOKEN` environment variable set to the Discord bot token.
 4. `docker build -t force-recall-bot .`
-5. `docker run force-recall-bot`
+5. `docker run --env-file .env force-recall-bot`
